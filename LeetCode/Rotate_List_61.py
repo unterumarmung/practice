@@ -26,7 +26,7 @@ class Solution:
         :rtype: ListNode
         """
         found_node = head
-        for _ in range(1, index + 1):
+        for _ in range(index):
             found_node = found_node.next
         return found_node
 

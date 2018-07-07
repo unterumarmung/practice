@@ -1,4 +1,4 @@
-# LeetCode link: https://leetcode.com/problems/rotate-list/description/
+# LeetCode link: https://leetcode.com/problems/rotate-list/
 
 # Definition for singly-linked list.
 # class ListNode:

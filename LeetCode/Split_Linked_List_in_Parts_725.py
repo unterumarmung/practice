@@ -1,4 +1,4 @@
-#LeetCode link: https://leetcode.com/problems/split-linked-list-in-parts/description/
+#LeetCode link: https://leetcode.com/problems/split-linked-list-in-parts/
 
 # Definition for singly-linked list.
 # class ListNode:

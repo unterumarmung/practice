@@ -11,7 +11,7 @@ public:
             if(bills[i] == 5) { five += 1; }
             
             else if(bills[i] == 10){
-                if(five == 0) success = false;
+                if(five == 0) { success = false; }
                 five -= 1;
                 ten += 1;
             }

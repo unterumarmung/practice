@@ -5,7 +5,7 @@ bool judgeCircle(char* moves) {
     int x = 0;
     int y = 0;
     
-    for (int move_index = 0; move_index < size; ++move_index){
+    for (int move_index = 0; move_index < size; ++move_index) {
         char move = moves[move_index];
         
         if (move == 'U') { x += 1; }

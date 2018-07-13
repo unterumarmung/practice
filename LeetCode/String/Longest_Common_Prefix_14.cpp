@@ -14,8 +14,7 @@ public:
         string temp_prefix = "";
         unsigned temp_prefix_size = 0;
         
-        for (int i = 0; i < first_size && is_ok; ++i)
-        {
+        for (int i = 0; i < first_size && is_ok; ++i) {
             temp_prefix += strs[0][i];
             temp_prefix_size += 1;
             

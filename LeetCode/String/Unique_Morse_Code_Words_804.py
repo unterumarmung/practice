@@ -1,4 +1,4 @@
-#LeetCode Link:
+#LeetCode Link: https://leetcode.com/problems/unique-morse-code-words/
 class Solution:
     def to_morse_code(self, word):
         A_CODE = ord("a")

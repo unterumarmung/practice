@@ -22,7 +22,6 @@ int lengthOfLongestSubstring(char* str) {
     
     for (int char_index = 1; char_index < str_length; ++char_index) {
         char current_char = str[char_index];
-        int current_length; //length of the longest required substring for current character
         
         for (int i = current_begin; i < char_index; ++i) {
             if (str[i] == current_char) { 
@@ -30,7 +29,7 @@ int lengthOfLongestSubstring(char* str) {
             }
         }
         
-        current_length = char_index - current_begin + 1;
+        int current_length = char_index - current_begin + 1;
         max_substring_length = max(max_substring_length, current_length);
     }
     
@@ -58,7 +57,6 @@ int lengthOfLongestSubstring(char* str) {
     chars_index[str[0]] = 0;
     for (int char_index = 1; char_index < str_length; ++char_index) {
         char current_char = str[char_index];
-        int current_length; //length of the longest required substring for current character
 
         if (chars_index[current_char] == -1) { 
             chars_index[current_char] = char_index; 
@@ -67,7 +65,7 @@ int lengthOfLongestSubstring(char* str) {
             chars_index[current_char] = char_index;
         }
         
-        current_length = char_index - current_begin + 1;
+        int current_length = char_index - current_begin + 1;
         max_substring_length = max(max_substring_length, current_length);
     }
     

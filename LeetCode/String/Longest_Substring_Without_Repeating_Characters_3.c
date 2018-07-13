@@ -14,8 +14,8 @@ Complexity analysis:
 int lengthOfLongestSubstring(char* str) {
     const int str_length = strlen(str); //length of string
     
-    if (str_length == 0) { return 0; }
-    if (str_length == 1) { return 1; }
+    if (str_length == 0) return 0;
+    if (str_length == 1) return 1;
     
     int max_substring_length = 1; //length of the longest substring without repeating characters
     int current_begin = 0; 
@@ -25,7 +25,9 @@ int lengthOfLongestSubstring(char* str) {
         int current_length; //length of the longest required substring for current character
         
         for (int i = current_begin; i < char_index; ++i) {
-            if (str[i] == current_char) { current_begin = i + 1; }
+            if (str[i] == current_char) { 
+                current_begin = i + 1; 
+            }
         }
         
         current_length = char_index - current_begin + 1;
@@ -44,8 +46,8 @@ Complexity analysis:
 int lengthOfLongestSubstring(char* str) {
     const int str_length = strlen(str); //length of string
     
-    if (str_length == 0) { return 0; }
-    if (str_length == 1) { return 1; }
+    if (str_length == 0) return 0;
+    if (str_length == 1) return 1; 
     
     int max_substring_length = 1; //length of the longest substring without repeating characters
     int current_begin = 0; 
@@ -58,8 +60,9 @@ int lengthOfLongestSubstring(char* str) {
         char current_char = str[char_index];
         int current_length; //length of the longest required substring for current character
 
-        if (chars_index[current_char] == -1) { chars_index[current_char] = char_index; }
-        else {
+        if (chars_index[current_char] == -1) { 
+            chars_index[current_char] = char_index; 
+        } else {
             if (chars_index[current_char] + 1 > current_begin) { current_begin = chars_index[current_char] + 1; }
             chars_index[current_char] = char_index;
         }

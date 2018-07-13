@@ -7,7 +7,7 @@ bool checkRecord(char* s) {
     
     bool can_be_rewarded = true;
     
-    for (int i = 0; i < size && can_be_rewarded; ++i){
+    for (int i = 0; i < size && can_be_rewarded; ++i) {
         if (s[i] == 'A') { absent_count += 1; }
         else if (late_max_duration == 0 && i != 0 && s[i - 1] == 'L' && s[i] == 'L') { late_max_duration = 2; }
         else if (late_max_duration != 0 && s[i] == 'L') { late_max_duration += 1; }

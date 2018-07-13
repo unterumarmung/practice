@@ -6,8 +6,8 @@ int max(int val1, int val2) {
 int lengthOfLongestSubstring(char* str) {
     const int str_length = strlen(str); //length of string
     
-    if (str_size == 0) { return 0; }
-    if (str_size == 1) { return 1; }
+    if (str_length == 0) { return 0; }
+    if (str_length == 1) { return 1; }
     
     int max_substring_length = 1; //length of the longest substring without repeating characters
     int current_begin = 0; 

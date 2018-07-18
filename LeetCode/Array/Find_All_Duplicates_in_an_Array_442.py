@@ -29,8 +29,8 @@ class Solution:
 '''
 2nd solution
 Complexity analysis:
-* Time: ???
-* Space: ???
+* Time: O(N)
+* Space: O(N)
 '''
 class Solution:
     def findDuplicates(self, nums):
